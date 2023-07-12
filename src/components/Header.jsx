@@ -1,15 +1,15 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>CRUD APP</h1>
+      {/* <h1>CRUD APP</h1> */}
       <ul className="nav">
         <li>
-          <a href="/">Home</a>
+          <NavLink to="/" end>Home</NavLink>
         </li>
         <li>
-          <a href="/">Add Post</a>
+          <NavLink to="post/add">Add Post</NavLink>
         </li>
         <li className="login">login</li>
       </ul>
